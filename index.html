@@ -1,326 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MG Corte e Costura</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-:root{
---vinho:#5f2a3c;
---rosa:#f7ecec;
---rosa-card:#f2dddd;
---verde:#25D366;
-}
-
-body{
-font-family:'Montserrat',sans-serif;
-background:var(--rosa);
-color:#333;
-}
-
-header{
-height:230px;
-background:
-linear-gradient(rgba(95,42,60,.60),rgba(95,42,60,.60)),
-url('corteecostura1.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-color:white;
-}
-
-header h1{
-font-family:'Playfair Display',serif;
-font-size:3rem;
-margin-bottom:10px;
-}
-
-header p{
-max-width:800px;
-font-size:1rem;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:40px 20px;
-}
-
-.titulo{
-text-align:center;
-font-family:'Playfair Display',serif;
-font-size:2.2rem;
-margin-bottom:40px;
-color:var(--vinho);
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
-}
-
-.card{
-background:var(--rosa-card);
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 3px 12px rgba(0,0,0,.15);
-}
-
-.card img{
-width:100%;
-height:280px;
-object-fit:cover;
-display:block;
-}
-
-.card-content{
-padding:18px;
-}
-
-.card h3{
-font-family:'Playfair Display',serif;
-font-size:1.6rem;
-color:var(--vinho);
-margin-bottom:10px;
-}
-
-.card p{
-font-size:.95rem;
-margin-bottom:18px;
-}
-
-.btn-whats{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:8px;
-text-decoration:none;
-background:var(--verde);
-color:white;
-padding:14px;
-border-radius:6px;
-font-weight:600;
-transition:.3s;
-}
-
-.btn-whats:hover{
-transform:translateY(-2px);
-}
-
-footer{
-background:var(--vinho);
-color:white;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-.whatsapp-float{
-position:fixed;
-right:20px;
-bottom:20px;
-width:65px;
-height:65px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:35px;
-text-decoration:none;
-box-shadow:0 4px 15px rgba(0,0,0,.3);
-z-index:999;
-}
-
-@media(max-width:850px){
-
-.grid{
-grid-template-columns:1fr;
-}
-
-header h1{
-font-size:2.2rem;
-}
-
-.card img{
-height:230px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>MG Corte e Costura</h1>
-
-<p>
-Transformando tecidos em afeto e elegância para o seu lar.
-Peças exclusivas, acabamento refinado e produção sob encomenda.
-</p>
-
-</header>
-
-<div class="container">
-
-<h2 class="titulo">Serviços</h2>
-
-<div class="grid">
-
-<!-- LENÇÓIS -->
-
-<div class="card">
-
-<img src="jogodecama.jpg" alt="Jogo de Lençol">
-
-<div class="card-content">
-
-<h3>Jogo de Lençol de Cama</h3>
-
-<p>
-Produção sob medida com acabamentos refinados e tecidos de alta qualidade.
-</p>
-
-<a
-class="btn-whats"
-target="_blank"
-href="https://wa.me/5527997165330?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Jogo%20de%20Lençol%20de%20Cama.">
-
-<i class="fab fa-whatsapp"></i>
-Vamos conversar pelo WhatsApp
-
-</a>
-
-</div>
-</div>
-
-<!-- CORTINAS -->
-
-<div class="card">
-
-<img src="cortina2.webp" alt="Cortinas">
-
-<div class="card-content">
-
-<h3>Cortinas</h3>
-
-<p>
-Cortinas personalizadas sob medida para salas, quartos e ambientes diversos.
-</p>
-
-<a
-class="btn-whats"
-target="_blank"
-href="https://wa.me/5527997165330?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Cortinas%20sob%20medida.">
-
-<i class="fab fa-whatsapp"></i>
-Vamos conversar pelo WhatsApp
-
-</a>
-
-</div>
-</div>
-
-<!-- COZINHA -->
-
-<div class="card">
-
-<img src="jogodecozinha2.jpg" alt="Jogos de Cozinha">
-
-<div class="card-content">
-
-<h3>Jogos de Cozinha</h3>
-
-<p>
-Conjuntos coordenados e decorativos para deixar sua cozinha ainda mais bonita.
-</p>
-
-<a
-class="btn-whats"
-target="_blank"
-href="https://wa.me/5527997165330?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Jogos%20de%20Cozinha.">
-
-<i class="fab fa-whatsapp"></i>
-Vamos conversar pelo WhatsApp
-
-</a>
-
-</div>
-</div>
-
-<!-- PANO DE PRATO -->
-
-<div class="card">
-
-<img src="panodeprato2.webp" alt="Pano de Prato">
-
-<div class="card-content">
-
-<h3>Jogo de Pano de Prato</h3>
-
-<p>
-Peças artesanais com acabamento diferenciado para uso diário ou presente.
-</p>
-
-<a
-class="btn-whats"
-target="_blank"
-href="https://wa.me/5527997165330?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20Jogo%20de%20Pano%20de%20Prato.">
-
-<i class="fab fa-whatsapp"></i>
-Vamos conversar pelo WhatsApp
-
-</a>
-
-</div>
-</div>
-
-</div>
-</div>
-
-<footer>
-
-<p>© MG Corte e Costura</p>
-
-<p>
-Atendimento personalizado sob encomenda.
-</p>
-
-</footer>
-
-<a
-class="whatsapp-float"
-target="_blank"
-href="https://wa.me/5527997165330?text=Olá!%20Gostaria%20de%20mais%20informações.">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-</body>
-</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Corte e Costura | Sob Encomenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset de Estilos Básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cor-principal: #60263b; 
+            --cor-fundo-cards: #f2dadb; 
+            --cor-fundo-pagina: #fbf0f0; 
+            --cor-whatsapp: #25D366;
+            --texto-escuro: #4a2834;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--cor-fundo-pagina);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            position: relative;
+            background: linear-gradient(rgba(96, 38, 59, 0.45), rgba(74, 40, 52, 0.75)), 
+                        url('corteecostura1.jpg') no-repeat center center;
+            background-size: cover;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 750px;
+            font-weight: 400;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0,
