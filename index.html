@@ -18,9 +18,9 @@
         }
 
         :root {
-            --cor-principal: #60263b; /* Tom vinho/uva escuro do rodapé e títulos */
-            --cor-fundo-cards: #f2dadb; /* Tom rosa chá suave suave dos cards */
-            --cor-fundo-pagina: #fbf0f0; /* Fundo geral claro e limpo */
+            --cor-principal: #60263b; /* Tom vinho/uva escuro */
+            --cor-fundo-cards: #f2dadb; /* Tom rosa chá suave */
+            --cor-fundo-pagina: #fbf0f0; /* Fundo geral claro */
             --cor-whatsapp: #25D366;
             --texto-escuro: #4a2834;
         }
@@ -83,8 +83,8 @@
         /* Grid Organizador dos Cards */
         .grid-servicos {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Força o layout de 2 colunas lado a lado */
-            gap: 40px; /* Espaçamento idêntico entre as colunas e linhas */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
         }
 
         /* Estrutura Interna do Card */
@@ -100,7 +100,7 @@
         /* Área da Foto */
         .card-img {
             width: 100%;
-            height: 380px; /* Altura ideal para valorizar os detalhes da costura */
+            height: 380px;
             overflow: hidden;
             background-color: #ffffff;
         }
@@ -108,7 +108,7 @@
         .card-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+            object-fit: cover;
             display: block;
         }
 
@@ -134,7 +134,7 @@
             font-size: 1rem;
             color: #5a3d46;
             margin-bottom: 25px;
-            min-height: 50px; /* Garante alinhamento mesmo com textos de tamanhos levemente diferentes */
+            min-height: 50px;
         }
 
         /* Botão WhatsApp */
@@ -152,6 +152,7 @@
             transition: background-color 0.2s ease, transform 0.2s ease;
             gap: 10px;
             box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+            cursor: pointer;
         }
 
         .btn-whatsapp:hover {
@@ -159,7 +160,7 @@
             transform: translateY(-2px);
         }
 
-        /* Rodapé Elegante */
+        /* Rodapé */
         footer {
             background-color: var(--cor-principal);
             color: #f7e6e9;
@@ -178,7 +179,7 @@
             opacity: 0.75;
         }
 
-        /* Responsividade para Celulares (muda para 1 coluna em telas menores) */
+        /* Responsividade */
         @media (max-width: 850px) {
             .grid-servicos {
                 grid-template-columns: 1fr;
@@ -212,7 +213,7 @@
                 <div class="card-conteudo">
                     <h3>Jogo de Lençol de Cama</h3>
                     <p>Produção sob medida com acabamentos em renda e tecidos nobres, proporcionando conforto absoluto e um visual sofisticado para o seu quarto.</p>
-                    <a href="https://wa.me/5527997165330?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda%20e%20saber%20mais%20sobre%20os%20Jogos%20de%20Len%C3%A7ol%20de%20Cama%20personalizados." target="_blank" class="btn-whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda%20e%20saber%20mais%20sobre%20os%20Jogos%20de%20Len%C3%A7ol%20de%20Cama%20personalizados." target="_blank" class="btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
                     </a>
                 </div>
@@ -225,7 +226,7 @@
                 <div class="card-conteudo">
                     <h3>Cortinas</h3>
                     <p>Modelos sob medida com caimento perfeito, trilhos ou ilhós. Transforme a iluminação e a privacidade de suas salas e quartos.</p>
-                    <a href="https://wa.me/5527997165330?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20Cortinas%20sob%20medida." target="_blank" class="btn-whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20Cortinas%20sob%20medida." target="_blank" class="btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
                     </a>
                 </div>
@@ -238,7 +239,7 @@
                 <div class="card-conteudo">
                     <h3>Jogos de Cozinha</h3>
                     <p>Conjuntos completos coordenados e decorativos para copa: caminhos de mesa, capas de eletrodomésticos e detalhes cheios de capricho.</p>
-                    <a href="https://wa.me/5527997165330?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20e%20encomendar%20um%20Jogo%20de%20Cozinha." target="_blank" class="btn-whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20e%20encomendar%20um%20Jogo%20de%20Cozinha." target="_blank" class="btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
                     </a>
                 </div>
@@ -251,7 +252,7 @@
                 <div class="card-conteudo">
                     <h3>Jogo de Pano de Prato</h3>
                     <p>Sacos de excelente absorção com barrados decorados e estampas artesanais exclusivas, ideais para o dia a dia ou para presentear.</p>
-                    <a href="https://wa.me/5527997165330?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20encomendar%20um%20Jogo%20de%20Panos%20de%20Prato." target="_blank" class="btn-whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Ol%C3%A1%21%20Tenho%20interesse%20em%20encomendar%20um%20Jogo%20de%20Panos%20de%20Prato." target="_blank" class="btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
                     </a>
                 </div>
