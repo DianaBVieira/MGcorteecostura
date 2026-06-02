@@ -18,9 +18,9 @@
         }
 
         :root {
-            --cor-principal: #60263b; 
-            --cor-fundo-cards: #f2dadb; 
-            --cor-fundo-pagina: #fbf0f0; 
+            --cor-principal: #60263b; /* Tom vinho/uva escuro do rodapé e títulos */
+            --cor-fundo-cards: #f2dadb; /* Tom rosa chá suave suave dos cards */
+            --cor-fundo-pagina: #fbf0f0; /* Fundo geral claro e limpo */
             --cor-whatsapp: #25D366;
             --texto-escuro: #4a2834;
         }
@@ -32,7 +32,7 @@
             line-height: 1.6;
         }
 
-        /* Cabeçalho */
+        /* Cabeçalho com a imagem corteecostura1.jpg de fundo */
         header {
             position: relative;
             background: linear-gradient(rgba(96, 38, 59, 0.45), rgba(74, 40, 52, 0.75)), 
@@ -61,4 +61,209 @@
             font-size: 1.1rem;
             max-width: 750px;
             font-weight: 400;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0,
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Seção Principal */
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--cor-principal);
+            margin-bottom: 45px;
+            font-weight: 600;
+        }
+
+        /* Grid Organizador dos Cards */
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Força o layout de 2 colunas lado a lado */
+            gap: 40px; /* Espaçamento idêntico entre as colunas e linhas */
+        }
+
+        /* Estrutura Interna do Card */
+        .card {
+            background-color: var(--cor-fundo-cards);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Área da Foto */
+        .card-img {
+            width: 100%;
+            height: 380px; /* Altura ideal para valorizar os detalhes da costura */
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+            display: block;
+        }
+
+        /* Conteúdo de Texto e Botão */
+        .card-conteudo {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .card-conteudo h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            color: var(--cor-principal);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .card-conteudo p {
+            font-size: 1rem;
+            color: #5a3d46;
+            margin-bottom: 25px;
+            min-height: 50px; /* Garante alinhamento mesmo com textos de tamanhos levemente diferentes */
+        }
+
+        /* Botão WhatsApp */
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--cor-whatsapp);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ece52;
+            transform: translateY(-2px);
+        }
+
+        /* Rodapé Elegante */
+        footer {
+            background-color: var(--cor-principal);
+            color: #f7e6e9;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer .sub-rodape {
+            font-size: 0.85rem;
+            opacity: 0.75;
+        }
+
+        /* Responsividade para Celulares (muda para 1 coluna em telas menores) */
+        @media (max-width: 850px) {
+            .grid-servicos {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            header h1 {
+                font-size: 2.4rem;
+            }
+            .card-img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MG Corte e Costura</h1>
+        <p>Transformando tecidos em afeto e elegância para o seu lar. Peças exclusivas, acabamento refinado e produção sob encomenda.</p>
+    </header>
+
+    <main class="container">
+        <h2 class="titulo-secao">Serviços</h2>
+        
+        <div class="grid-servicos">
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="jogodecama.jpg" alt="Jogo de Lençol para Cama Personalizado">
+                </div>
+                <div class="card-conteudo">
+                    <h3>Jogo de Lençol de Cama</h3>
+                    <p>Produção sob medida com acabamentos em renda e tecidos nobres, proporcionando conforto absoluto e um visual sofisticado para o seu quarto.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Olá" target="_self" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="cortina2.webp" alt="Cortinas sob medida">
+                </div>
+                <div class="card-conteudo">
+                    <h3>Cortinas</h3>
+                    <p>Modelos sob medida com caimento perfeito, trilhos ou ilhós. Transforme a iluminação e a privacidade de suas salas e quartos.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Olá" target="_self" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="jogodecozinha2.jpg" alt="Jogos de Cozinha em tecido">
+                </div>
+                <div class="card-conteudo">
+                    <h3>Jogos de Cozinha</h3>
+                    <p>Conjuntos completos coordenados e decorativos para copa: caminhos de mesa, capas de eletrodomésticos e detalhes cheios de capricho.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Olá" target="_self" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="pano de prato2.webp" alt="Jogo de Pano de Prato">
+                </div>
+                <div class="card-conteudo">
+                    <h3>Jogo de Pano de Prato</h3>
+                    <p>Sacos de excelente absorção com barrados decorados e estampas artesanais exclusivas, ideais para o dia a dia ou para presentear.</p>
+                    <a href="https://api.whatsapp.com/send?phone=5527997165330&text=Olá" target="_self" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Fazer orçamento no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MG Corte e Costura. Todos os direitos reservados.</p>
+        <p class="sub-rodape">Atendimento personalizado sob encomenda para todo o Brasil.</p>
+    </footer>
+
+</body>
+</html>
